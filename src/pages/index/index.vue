@@ -1,8 +1,16 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
+	<view class="index">
+		<!-- 搜索 -->
+		<view class="search"></view>
+		<!-- 轮播图 -->
+		<view class="slider"></view>
+		<!-- 功能导航 -->
+		<view class="navs"></view>
+		<!-- 楼层 -->
+		<view class="floors"></view>
+		<!-- 页面底部提示 -->
+		<view class="bottom">
+			<text>我是有底线的</text>
 		</view>
 	</view>
 </template>
@@ -11,7 +19,7 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello 许天龙'
 			}
 		},
 		onLoad() {
@@ -23,27 +31,6 @@
 	}
 </script>
 
-<style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+<style lang="scss" scoped>
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
 </style>
